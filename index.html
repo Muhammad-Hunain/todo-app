@@ -28,7 +28,7 @@
                 <button  class="btn btn-lg" onclick="addTodo()"> <i class="fas fa-address-card me-3"></i>ADD</button>
                 <button  class="btn btn-lg" onclick="deleteAll()"> <i class="fas fa-trash-alt me-3"></i> ALL DELETE</button>    
             
-                <div>
+                <div class="to_list">
                     <ul id="list" class="mt-5">
             
                     </ul>
@@ -37,11 +37,26 @@
 
             </div>
         </div>
-    
-
-
-    
     </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script> -->
+
+    <script>
+    
+    const firebaseConfig = {
+    apiKey: "AIzaSyAZ3EZdYOdsIfRRme9x_9ZajCuVHbRwH0E",
+    authDomain: "todo-app-28820.firebaseapp.com",
+    projectId: "todo-app-28820",
+    storageBucket: "todo-app-28820.appspot.com",
+    messagingSenderId: "225171210105",
+    appId: "1:225171210105:web:829d740432e3f3e98739a8"
+  };
+        
+    firebase.initializeApp(firebaseConfig);
+    </script>
 
 
 

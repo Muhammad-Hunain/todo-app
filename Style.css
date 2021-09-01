@@ -12,7 +12,6 @@ justify-content: center;
 align-items: center;
 }
 .border-1{
-  
     width: 40%;
     margin: 0 auto;
 }
@@ -42,7 +41,18 @@ box-shadow:4px 4px 4px #6610f2 !important;
 font-weight: bold;
 color: #6610f2;
 margin-top: 20px;
+font-size: 15px;
+width: 80%;
+display: flex;
+align-items: center;
+
 }
+.to_list li {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+}
+
 #list li:hover{
     background-color: #6610f2;
     color: #fff;
@@ -57,7 +67,7 @@ float: right;
     color: #fff !important;
     border-radius: 5px;
     padding: 10px 20px;
-    margin:-15px 10px;
+    margin: 0 10px;
     
 }
 #list li button:hover{
@@ -68,4 +78,8 @@ float: right;
 #list li button:focus{
     box-shadow: 4px 4px 4px #6610f2 ;
     outline: none;
+}
+
+li p{
+    width: 58%;
 }
